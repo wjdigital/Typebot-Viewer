@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEXTAUTH_URL="https://$RAILWAY_PUBLIC_DOMAIN"
+NEXTAUTH_URL="https://builder.autobet.one/"
 printenv > ./apps/builder/.env.production
 cat ./apps/builder/.env.production
 ENVSH_ENV=./apps/builder/.env.production ENVSH_OUTPUT=./apps/builder/public/__env.js bash inject-runtime-env.sh
