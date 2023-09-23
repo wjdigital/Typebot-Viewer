@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEXT_PUBLIC_VIEWER_URL="https://viewer.autobet.one/"
+NEXT_PUBLIC_VIEWER_URL="https://viewer.autobet.one"
 printenv > ./apps/viewer/.env.production
 cat ./apps/viewer/.env.production
 
