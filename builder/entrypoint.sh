@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEXTAUTH_URL="https://builder.autobet.one"
+NEXTAUTH_URL="${{shared.NEXTAUTH_URL}}"
 printenv > ./apps/builder/.env.production
 cat ./apps/builder/.env.production
 ENVSH_ENV=./apps/builder/.env.production ENVSH_OUTPUT=./apps/builder/public/__env.js bash inject-runtime-env.sh
